@@ -2,8 +2,9 @@ package main
 
 import (
 	"github.com/louisun/go-rzlib/internal/testparser"
+	"os"
 )
 
 func main() {
-	testparser.ExtractFailedInfoFromFile("/Users/Renzo/Tmp/t.log")
+	testparser.ExtractFailedInfoFromReader(os.Stdin)
 }
